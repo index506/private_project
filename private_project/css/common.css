@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import url('layout_base.css');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0; padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    font-size: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*align, border, input*/
+img, fieldset, a{border: none;}
+img{vertical-align: middle;}
+table, thead, tbody, tfoot{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0 none;
+}
+ol,ul,li{list-style: none;}
+address, em{font-style: normal;}
+input, select, textarea, button, form img, label{
+    vertical-align: middle;
+}
+a{text-decoration: none;}
+a:link{color: #444;}
+a:visited{color: #444;}
+a:hover{color: #444;}
+a:focus{color: #444;}
+/*common*/
+html{height: 100%;}
+body{height: 100%; font-family: 'Malgun Gothic','맑은 고딕', sans-serif; font-size: 16px; letter-spacing: -1px; color: #444; white-space: normal; word-wrap: break-word;}
+input, select, text-area{box-sizing: border-box; font-family: 'Malgun Gothic','맑은 고딕', sans-serif; letter-spacing: -1px; color: #444; -webkit-appearance: none;}
+textarea{box-sizing: border-box; padding: 10px; border: 1px solid #ccc;}
+input, textarea{-webkit-appearance: none; border-radius: 0;}
+*{-webkit-text-size-adjust: none;}
+.dp_nene{display:none;}
+.hdd, legend{font-size: 0; width: 0; height: 0; line-height: 0; text-indent: -9999px; overflow: hidden; visibility: hidden; position: absolute; left: 0; top: 0;}
+caption{font-size: 0; width: 0; height: 0; line-height: 0; text-indent: -9999px; overflow: hidden;}
+.clear:after{content:""; display: block; clear: both;}
+hr{display: none;}
+
+
+/*====================PC====================*/
+
+/* top_menu */
+#top_wrap{width: 100%; height: 40px; background-color: #212121;}
+#top_wrap #top_menu{width: 1226px; margin: 0 auto;}
+#top_wrap #top_menu .relateSite{float: left; margin-left: 20px;}
+#top_wrap #top_menu .sign{float: right; margin-right: 20px;}
+#top_wrap #top_menu ul li{float: left; height: 40px; line-height: 40px; font-size: 12px; margin: 0; position: relative;}
+#top_wrap #top_menu ul li:first-child::after{content: "|"; color: #b0b0b0; padding: 0 20px; position: relative; top: -1px;}
+#top_wrap #top_menu a{color: #b0b0b0;}
+
+@media all and (max-width:1226px){
+    #top_wrap #top_menu{width: 100%;}
+}
+
+/* gnb_slide_wrap */
+#gnb_slide_wrap{width: 100%; position: relative;}
+
+/* gnb */
+#gnb_wrap{width: 100%; position: absolute; z-index: 10;}
+#gnb_wrap #gnb{width: 1226px; height: 88px; margin: 0 auto; line-height: 88px; overflow: hidden;}
+#gnb_wrap #gnb .main_title{width: 56px; overflow: hidden; margin-left: 20px; display: inline-block;}
+#gnb_wrap #gnb .main_title img{margin-left: -56px;}
+#gnb_wrap #gnb .gnb_content{float: right;}
+#gnb_wrap #gnb .gnb_content li{float: left; font: 14px AppleGothic,"Malgun Gothic",sans-serif; line-height: 88px;  margin: 0 25px; font-weight: bold;}
+#gnb_wrap #gnb .gnb_content li a{color: white; cursor: default;}
+
+#gnb_wrap .gnb_list{width: 100%; height: 242px; background-color: white; border: 1px solid #ccc;}
+#gnb_wrap .gnb_list ul.on{width: 1226px; height: 242px; margin: 0 auto; }
+#gnb_wrap .gnb_list ul li{}
+
+/* image */
+#image_wrap{width: 100%; height: 770px; position: absolute;}
