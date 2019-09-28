@@ -95,7 +95,7 @@ hr{display: none;}
 #gnb_slide_wrap{width: 100%; position: relative;}
 
 /* gnb */
-#gnb_wrap{width: 100%; position: absolute; z-index: 10;}
+#gnb_wrap{width: 100%; position: absolute; z-index: 20;}
 #gnb_wrap #gnb{width: 1226px; height: 88px; margin: 0 auto; line-height: 88px; overflow: hidden;}
 #gnb_wrap #gnb .main_title{width: 56px; overflow: hidden; margin-left: 20px; display: inline-block;}
 #gnb_wrap #gnb .main_title img{margin-left: -56px;}
@@ -103,9 +103,24 @@ hr{display: none;}
 #gnb_wrap #gnb .gnb_content li{float: left; font: 14px AppleGothic,"Malgun Gothic",sans-serif; line-height: 88px;  margin: 0 25px; font-weight: bold;}
 #gnb_wrap #gnb .gnb_content li a{color: white; cursor: default;}
 
-#gnb_wrap .gnb_list{width: 100%; height: 242px; background-color: white; border: 1px solid #ccc;}
-#gnb_wrap .gnb_list ul.on{width: 1226px; height: 242px; margin: 0 auto; }
-#gnb_wrap .gnb_list ul li{}
+#gnb_wrap .gnb_list{width: 100%; height: 242px;}
+#gnb_wrap .gnb_list ul{display: none; position: relative;}
+#gnb_wrap .gnb_list ul.on{display: block; width: 1226px; height: 242px; margin: 0 auto;}
+#gnb_wrap .gnb_list ul li{width: 140px; height: 170px; display: inline-block; position: absolute; top: 35;}
+#gnb_wrap .gnb_list ul li p{width: 140px; text-align: center; margin-top: 14px;}
 
 /* image */
-#image_wrap{width: 100%; height: 770px; position: absolute;}
+#image_wrap{position: relative;}
+#image_wrap .left_btn{position: absolute; top: 330px; left: 55px; z-index: 15; display: inline-block; width: 40px; height: 59px; background: url('../images/main/icon-slide-nav1.png') no-repeat; text-indent: -9999px;}
+#image_wrap .right_btn{position: absolute; top: 0; right: 0; z-index: 15; display: inline-block; width: 40px; height: 59px; background: url('../images/main/icon-slide-nav1.png') no-repeat -40px 0; text-indent: -9999px;}
+
+#image_wrap li{position: relative;}
+#image_wrap li.image_list0{width: 100%; height: 770px; background: url('../images/main/20190415105231.jpg') no-repeat center; z-index: 10;}
+#image_wrap li.image_list1{position: absolute; width: 100%; height: 770px; background: url('../images/main/1920_770scooter.jpg') no-repeat center; top: 0; left: 0;}
+
+#image_wrap li.image_list2{position: absolute; width: 100%; height: 770px; background: url('../images/main/Pocophone.jpg') no-repeat center; top: 0; left: 0;}
+
+#image_wrap li .image_content{position: absolute; top: 250px; left: 23%;}
+#image_wrap li .image_content h3{font-size: 60px; color: white;}
+#image_wrap li .image_content p{font-size: 16px; color: white; margin: 20px 0 50px; letter-spacing: 1px; line-height: 110%;}
+#image_wrap li .image_content a{display: inline-block; border: 1px solid white; font-size: 16px; width: 220px; height: 38px; line-height: 38px; text-align: center; color: white;}
